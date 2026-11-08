@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Volleyball Arcade</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        #00bfff,
+        #0066ff
+    );
+
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+.title{
+    color:white;
+    font-size:50px;
+    margin-top:20px;
+
+    text-shadow:3px 3px 10px black;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.statBox{
+    background:white;
+    border-radius:20px;
+
+    width:180px;
+    padding:15px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.3);
+}
+
+.statBox h3{
+    margin:0;
+}
+
+.statBox p{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.gameGrid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:30px;
+}
+
+.gameCard{
+    width:250px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.3);
+}
+
+.gameCard:hover{
+    transform:translateY(-10px) scale(1.05);
+    background:#fff5cc;
+}
+
+.gameCard h2{
+    margin-top:0;
+}
+
+.leaderboard{
+    margin:40px auto;
+    width:320px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.3);
+}
+
+.leaderboard h2{
+    margin-top:0;
+}
+
+.scoreEntry{
+    font-size:20px;
+    padding:5px;
+}
+
+.ball{
+    position:fixed;
+    font-size:60px;
+    animation:float 8s infinite ease-in-out;
+    pointer-events:none;
+}
+
+.ball1{
+    left:10%;
+    top:15%;
+}
+
+.ball2{
+    left:80%;
+    top:20%;
+}
+
+.ball3{
+    left:25%;
+    top:70%;
+}
+
+.ball4{
+    left
